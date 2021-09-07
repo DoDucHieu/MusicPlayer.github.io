@@ -1,0 +1,184 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  width: 100%;
+  background-color:#002834;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* overflow: scroll; */
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003544;
+}
+
+.songNameRunning {
+  height: 32px;
+  width: 60%;
+  margin: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.songName {
+  margin: 4px;
+  color: rgba(255, 255, 255, 0.877);
+  /*3 dòng dưới để làm dấu 3 chấm*/
+  /* display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;   */
+  color: rgb(233, 133, 18);
+  position: absolute;
+}
+
+
+.currentImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.disk {
+  width: 240px;
+  height: 240px;
+  margin: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.playButton {
+  width: 90%;
+  margin: 8px;
+}
+
+.playButton-listItem {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  align-items: center;
+}
+
+.listItem-item {
+  color: rgb(221, 233, 236);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.open{
+    color: coral;
+    font-size: 2rem;
+}
+
+.repeatActive{
+    color: coral;
+}
+
+.shuffleActive{
+  color: coral;
+}
+
+.timePlay {
+  position: relative;
+  width: 90%;
+  height: 8px;
+  background-color: rgb(154 175 206);
+  margin: 8px auto;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.currentTime {
+  position: absolute;
+  left: 0px;
+  height: 8px;
+  border-radius: 5px;
+  background-color: coral;
+}
+.appBody {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.song {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 76px;
+  background-color: rgb(233, 158, 72);
+  margin: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.colorOfSelectSong{
+     background-color: rgb(154 175 206);
+}
+
+.song-disk {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0 8px;
+}
+
+.songAndAuthor{
+  height: 60px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.songAndAuthor-songName {
+  font-size: 1.1rem;
+  display: -webkit-box; /*để làm dấu 3 chấm*/
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.threeDot{
+  color: aquamarine;
+  font-size: 1rem;
+  margin-right: 8px;
+}
+
+.songAndAuthor-author {
+}
+
+/* .active-songs {
+  animation-name: rotate-song;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotate-song {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+} */
